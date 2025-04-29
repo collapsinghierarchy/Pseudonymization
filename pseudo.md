@@ -367,7 +367,7 @@ Additionally, we have not yet covered **anonymous authentication and authorizati
 
 The definition of pseudonymization remains broad, requiring that **personal data be transformed in a way that prevents direct identification while allowing controlled re-identification under strict conditions**. Since adversary models can vary significantly depending on the **organizational context, regulatory requirements, and threat landscape**, the selection of an appropriate pseudonymization technique must be guided by a **well-defined risk assessment**.
 
-Due to this **heterogeneity in adversary models**, the set of potential pseudonymization mechanisms is extensive, and it is beyond the scope of this document to list every possible approach. However, for **most practical use cases**, one of the techniques described earlier—such as **deterministic encryption, format-preserving encryption, or searchable encryption**—should be **sufficient when properly configured**.
+Due to this **heterogeneity in adversary models**, the set of potential pseudonymization mechanisms is extensive, and it is beyond the scope of this document to list every possible approach. However, for **most practical use cases**, one of the techniques described earlier—such as **deterministic encryption, format-preserving encryption, CCA2 secure encryption and FHE/MPC**—should be **sufficient when properly configured**.
 
 If a **corner case arises** where standard techniques do not meet your specific requirements, we **strongly advise consulting a cryptographic expert** before implementing a custom solution. **Designing ad hoc cryptographic mechanisms without expert validation often leads to flawed implementations, rendering the protection ineffective.**  
 
